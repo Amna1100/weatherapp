@@ -1,0 +1,155 @@
+body
+{
+ 
+ /* background: linear-gradient(to left,#e062b6,#9c039c,#135bb9,#94e5f0); */
+background: url(ma3.jpg);
+background-size: cover;
+background-position: center;
+}
+ 
+   *
+   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+   }
+   body{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+
+   }
+   .container
+   {
+      position:absolute;
+      width:400px;
+      height: 100px;
+      top: 20%;
+      background: rgba(255,255,255,.1);
+      backdrop-filter: blur(30px);
+      border: 2px solid rgba(255,255,255,.2);
+      border-radius: 16px;
+      padding: 20px;
+      color: white;
+   }
+ 
+   .search-box
+   {
+      position: relative;
+      width: 100%;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+   }
+   .search-box i{
+    position: absolute;
+    left: 10px;
+    font-size: 28px;
+
+   }
+   .search-box input
+   {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background: transparent;
+   border: 2px solid #888686;
+   outline: none;
+   border-radius: 10px;
+   font-size: 18px;
+   font-weight: 500;
+    text-transform: uppercase;  
+   color: azure;
+   padding: 0 48px 0 42px ;
+ 
+   }
+   .search-box input::placeholder
+   {
+      color: white;
+      text-transform: capitalize;
+   }
+   .search-box button
+   {
+      position: absolute;
+      width: 40px;
+      height: 100%;
+      right: 1px;
+      background: transparent;
+      color: white;
+      outline: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      padding: 0 40px 0 5px;
+   }
+
+   .weather-box 
+   {
+      text-align: center;
+      margin: 0 40px;
+   }
+
+   .weather-box img
+   {
+      width: 80%;
+   }
+   .weather-box .temparature
+   {
+   position: relative;
+   font-size: 50px;
+   line-height: 1;
+   font-weight: 700;
+   margin: 20px 0px 6p -30px ;
+   }
+   /* .weather-box .temparature  */
+
+   .weather-box .city
+   {
+      font-size: 30px;
+      font-weight: 600;
+      text-transform: capitalize;
+   }
+   .weather-detailes
+   {
+      position: absolute;
+      bottom: 40px;
+      left: 0px;
+      width: 100%;
+      display: flex;
+      padding: 0 20px;
+   }
+   .weather-detailes .humidity,
+   .weather-detailes  .wind
+   {
+      display: flex;
+      align-items: center;
+      width: 50%;
+   }
+   .weather-detailes .humidity
+   {
+      justify-content: flex-start;
+      padding: 20px;
+   }
+   .weather-detailes  .wind
+   {
+      justify-content: flex-end;
+      padding: 20px;
+   }
+
+   .weather-detailes i
+   {
+     font-size: 56px;
+     margin-right: 10px;
+   }
+   .weather-detailes p
+   {
+font-size: 14px;
+font-weight: 500;
+
+   }
+   .weather-box{
+      display: none;
+   }
